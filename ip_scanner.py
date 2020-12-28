@@ -27,4 +27,4 @@ parser.add_argument('Mac', metavar='mac', type=str, help="mac address to search 
 args = parser.parse_args()
 mac_addr = args.Mac
 
-print('IP Address at Mac\n{}'.format(get_ip_from_mac(mac_addr)))
+print('IP Address at Mac {}\n{}'.format(mac_addr, get_ip_from_mac(mac_addr)))
